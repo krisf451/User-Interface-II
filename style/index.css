@@ -1,1 +1,262 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* Add CSS styling here */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+html {
+  font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.head {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: lightgray;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.nav1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.nav1 a:hover {
+  color: slategray;
+  background: white;
+}
+.navBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.banner {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-repeat: no-repeat;
+}
+
+.projectContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexItem {
+  margin: 30px 20px;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://picsum.photos/seed/picsum/200");
+}
+
+.flexItem p,
+.flexItem a {
+  color: black;
+  text-shadow: 1px 1px white;
+  margin: 0 20px;
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  background: lightgray;
+  justify-content: center;
+}
+footer img {
+  height: 50px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 36px;
+  width: 50%;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 2px 2px gray;
+}
+h2:hover {
+  color: gray;
+  text-shadow: 2px 2px white;
+}
+
+/* button stuff */
+.myButton {
+  box-shadow: inset 0px 10px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 18px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
