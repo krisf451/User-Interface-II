@@ -1,1 +1,282 @@
+/* CSS reset  */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* General Styles */
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  background-color: #fbfffb;
+  color: #4f4f4f;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oxygen", sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding: 4% 0;
+}
+
 /* Add CSS styling here */
+
+header {
+  background-color: lightgrey;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+}
+
+.topsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.topsection img {
+  width: 50%;
+}
+.description {
+  padding: 20px;
+  width: 50%;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.portfolio-element {
+  text-align: center;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-element img {
+  height: 100px;
+  width: 100%;
+  transition: 0.5s;
+}
+.portfolio-element img:hover {
+  transform: translateY(-10px);
+}
+
+/* button stuff */
+
+button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MEDIA QUERIES FOR MVP  */
+
+/* tablet */
+@media (max-width: 800px) {
+  /* looks fine at 800 */
+}
+
+/* mobile  */
+@media (max-width: 500px) {
+  /* header stuff for mobile  */
+  header {
+    margin: 2%;
+  }
+  header h1 {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav button {
+    width: 25%;
+    padding: 10px 10px;
+  }
+
+  /* top section stuff */
+  .topsection {
+    flex-direction: column;
+  }
+  .topsection img {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+  .description button {
+    padding: 10px 10px;
+    width: 50%;
+    margin: 5% 0;
+  }
+
+  /* content rows and porfolio element section  */
+  .portfolio-element {
+    width: 45%;
+  }
+}
