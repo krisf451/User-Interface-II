@@ -157,7 +157,6 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #266035;
 }
 section {
   padding: 4% 0;
@@ -195,10 +194,22 @@ footer {
   justify-content: space-evenly;
   flex-direction: row;
   padding: 20px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .portfolio-element {
   text-align: center;
-  padding: 20px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-element img {
+  height: 100px;
+  width: 100%;
+  transition: 0.5s;
+}
+.portfolio-element img:hover {
+  transform: translateY(-10px);
 }
 
 /* button stuff */
@@ -233,6 +244,7 @@ button a {
   }
   header h1 {
     text-align: center;
+    margin-bottom: 3%;
   }
   nav {
     display: flex;
