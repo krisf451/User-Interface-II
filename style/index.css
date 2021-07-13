@@ -234,6 +234,7 @@ button a {
 
 /* tablet */
 @media (max-width: 800px) {
+  /* looks fine at 800 */
 }
 
 /* mobile  */
@@ -275,4 +276,7 @@ button a {
   }
 
   /* content rows and porfolio element section  */
+  .portfolio-element {
+    width: 45%;
+  }
 }
